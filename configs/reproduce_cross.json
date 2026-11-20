@@ -1,0 +1,9 @@
+{
+  "name": "reproduce_cross",
+  "description": "Same settings as cross_shape/cross_hook_sweep.py: domain radius 3, grid from -3.1 to 3.1 in 0.2 steps, 2 degree rotations.",
+  "grid": {"domain_radius": 3.0, "dx": 0.2, "dtheta_deg": 2, "grid_start": -3.1, "grid_stop": 3.1},
+  "sweeps": [
+    {"shape": "hooked_cross", "vary": "hook_len", "values": [0.5, 0.6, 0.75, 0.9, 1.0, 1.1, 1.2],
+     "fixed": {"bar_len": 1.5, "bar_thk": 0.3, "hook_thk": 0.3}}
+  ]
+}

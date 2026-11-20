@@ -1,0 +1,9 @@
+{
+  "name": "reproduce_c_shape",
+  "description": "Same settings as c_shape/inaccessibility_sweep.py: domain radius 2.5, 0.2 grid, 4 degree rotations, mouth angle 0-90 in steps of 5.",
+  "grid": {"domain_radius": 2.5, "dx": 0.2, "dtheta_deg": 4},
+  "sweeps": [
+    {"shape": "c_shape", "vary": "mouth_deg", "values": {"start": 0, "stop": 95, "step": 5},
+     "fixed": {"inner_radius": 0.75}}
+  ]
+}

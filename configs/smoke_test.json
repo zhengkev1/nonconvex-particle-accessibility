@@ -1,0 +1,8 @@
+{
+  "name": "smoke_test",
+  "grid": {"domain_radius": 2.5, "dx": 0.4, "dtheta_deg": 30},
+  "sweeps": [
+    {"shape": "c_shape", "vary": "mouth_deg", "values": [10, 60]},
+    {"shape": "star", "vary": "inner_ratio", "values": [0.4]}
+  ]
+}

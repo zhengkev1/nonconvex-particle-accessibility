@@ -1,4 +1,4 @@
-hook_len,accessibility,height_change,source
+hook_len,accessible_fraction,height_change,source
 0.50,0.94228,0.023,analysis/fit_accessibility_vs_height_change.py
 0.60,0.9272,,figures/cross_hook0.60.png (frame title)
 0.75,0.92284,0.021,analysis/fit_accessibility_vs_height_change.py

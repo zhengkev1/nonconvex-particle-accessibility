@@ -1,0 +1,22 @@
+{
+  "name": "all_shapes",
+  "description": "One parameter sweep per shape family on a shared, coarser grid, for comparing families.",
+  "grid": {"domain_radius": 3.0, "dx": 0.2, "dtheta_deg": 6},
+  "sweeps": [
+    {"shape": "disc", "vary": "radius", "values": [1.0]},
+    {"shape": "ellipse", "vary": "aspect", "values": [1.5, 2, 3, 4]},
+    {"shape": "sector", "vary": "mouth_deg", "values": {"start": 0, "stop": 181, "step": 15}},
+    {"shape": "c_shape", "vary": "mouth_deg", "values": {"start": 0, "stop": 181, "step": 15}},
+    {"shape": "ring_segment", "vary": "thickness", "values": [0.1, 0.15, 0.2, 0.25, 0.35, 0.5], "fixed": {"gap_deg": 40}},
+    {"shape": "crescent", "vary": "offset", "values": [0.2, 0.3, 0.4, 0.5, 0.6, 0.8]},
+    {"shape": "hooked_cross", "vary": "hook_len", "values": [0.3, 0.5, 0.75, 1.0, 1.2, 1.5]},
+    {"shape": "plus", "vary": "arm_thk", "values": [0.2, 0.3, 0.4, 0.6, 0.8]},
+    {"shape": "star", "vary": "inner_ratio", "values": [0.2, 0.3, 0.4, 0.5, 0.6, 0.8], "fixed": {"points": 5}},
+    {"shape": "star", "vary": "points", "values": [3, 4, 5, 6, 8], "fixed": {"inner_ratio": 0.4}},
+    {"shape": "u_shape", "vary": "depth", "values": [0.4, 0.6, 0.8, 1.0, 1.2, 1.6], "fixed": {"width": 1.2}},
+    {"shape": "u_shape", "vary": "width", "values": [0.8, 1.0, 1.2, 1.6, 2.0], "fixed": {"depth": 1.2}},
+    {"shape": "l_shape", "vary": "arm_ratio", "values": [0.4, 0.6, 0.8, 1.0]},
+    {"shape": "t_shape", "vary": "stem_ratio", "values": [0.4, 0.6, 0.8, 1.0]},
+    {"shape": "s_shape", "vary": "thickness", "values": [0.2, 0.3, 0.4, 0.5]}
+  ]
+}
